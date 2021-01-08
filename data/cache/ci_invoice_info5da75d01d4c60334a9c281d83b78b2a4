@@ -1,0 +1,1 @@
+a:3:{s:4:"time";i:1607580803;s:3:"ttl";i:3600000;s:4:"data";a:2:{i:0;a:6:{s:5:"invId";s:1:"6";s:10:"locationId";s:1:"1";s:8:"billDate";s:10:"2020-09-26";s:3:"qty";s:2:"41";s:6:"incost";s:2:"88";s:5:"inqty";s:2:"51";}i:1;a:6:{s:5:"invId";s:1:"7";s:10:"locationId";s:1:"1";s:8:"billDate";s:10:"2020-09-26";s:3:"qty";s:3:"242";s:6:"incost";s:4:"4037";s:5:"inqty";s:3:"258";}}}

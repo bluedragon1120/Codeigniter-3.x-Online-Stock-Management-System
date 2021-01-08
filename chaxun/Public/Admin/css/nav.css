@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* 以下实际使用若已初始化可删除 .nav height父级需逐级设置为100%*/
+body,html{height: 100%;background: #F3F3F3}
+body,ul{margin:0;padding:0}
+body{font:14px "微软雅黑","宋体","Arial Narrow",HELVETICA;-webkit-text-size-adjust:100%;} 
+li{list-style:none} 
+a{text-decoration:none;}
+/* 以上实际使用若已初始化可删除 */
+
+/* nav */
+.nav{width:160px;height: 100%;background: #454545;transition: all .3s;}
+.nav a{display: block;overflow: hidden;padding-left: 20px;line-height: 50px;max-height: 50px;color: #fff;transition: all .3s;}
+.nav-div1{font-size: 20px; background:#303437;padding-left: 20px;line-height: 80px;max-height: 80px;color: #fff;transition: all .3s;}
+/* 此处修改导航图标 可自定义iconfont 替换*/
+.nav .nav-icon{font-size: 20px;position: absolute;margin-left:-1px;}
+
+.icon_1::after{content: "\e62b";}
+.icon_2::after{content: "\e669";}
+.icon_3::after{content: "\e61d";}
+/*---------------------*/
+.nav a span{margin-left: 30px;}
+.nav-item{position: relative;}
+.nav-item.nav-show{border-bottom: none;}
+.nav-item ul{display: none;background: rgba(255,255,255,.1);}
+.nav-item.nav-show ul{display: block;}
+
+.nav-show,.nav-item>a:hover{color: #333;background:#fff;}
+.nav-show>a:before,.nav-item>a:hover:before{opacity:1;}
+.nav-item .navahover{color: #333;background: #fff;}
+
+.ddiv1{width: 100%;height: 50px;border-radius: 5px;background: #fff;}
+.ddiv1_span1{font-size: 18px;color: #333;line-height: 50px;margin-left: 15px;}
+.ddiv1_d1{width: 300px;float: right;}
+.ddiv1_d1 a{background: #419FFF;margin-top:8px;border-radius: 5px; display: block;float: left;color: #fff;text-decoration: none;padding: 8px;margin-left: 30px;}
+.ddiv1_d1 a:hover{background: #005FBD;}
+.ddiv2{width:96%;height: auto;padding: 2%; border-radius: 5px;background: #fff; margin-top: 10px;}
+.ddiv2_1{border-bottom:1px solid #E9E9E9;height: 58px;line-height: 58px;}
+.ddiv2_1 a{display: block;float: left; color: #333;font-size: 16px;padding: 0px 15px;}
+.ddiv2_1 a:hover{border-bottom: 2px solid #419FFF;color:#419FFF; }
+.ddiv2_1 .hover{border-bottom: 2px solid #419FFF;color:#419FFF; }
+.ddiv2_2ul1{width: 100%;height: 50px;line-height: 50px;background: #F5F5F5;border-radius: 5px;margin-top: 20px;}
+.ddiv2_2ul1 ul li{float: left; }
+.ddiv2_2ul2 li{display: block; border-bottom: 1px solid #ccc;padding-top: 15px;}
+.li1{min-width: 8%;padding-left: 2%}
+.li2{min-width: 18%;}
+.li3{min-width: 18%;}
+.li4{min-width: 18%;}
+.li5{min-width: 18%;}
+.li6{min-width: 10%;}
+.li30{min-width: 30%;}
+.li_fr1 p,.li_fr2 p{line-height: 40px;margin: 0px;font-size: 15px;display: inline-block;}
+.li_fr2 p{margin-right: 20px;}
+.li6 a{display: block;width:50px;height: 20px;margin-top: 25px; line-height: 20px;text-align: center;border-radius: 5px;color: #fff; background: #0392DE;}
+.li6 a:hover{background: #005FBD;text-align: center;}
+
+.ddiv3 ul{width: 50%;margin: 20px auto;}
+.ddiv3 li{float: left;color: #333;width: 35px;height: 35px;line-height: 35px;margin: 0px 5px;}
+.ddiv3 li a{display: block; color: #333;background:#fff;text-decoration: none;font-weight: bold;border-radius: 5px;text-align: center;}
+.ddiv3 li a:hover{background: #409EFF;color: #fff;}
+
+.indiv1_1{width: 100%;height: 62px;background:#fff;}
+

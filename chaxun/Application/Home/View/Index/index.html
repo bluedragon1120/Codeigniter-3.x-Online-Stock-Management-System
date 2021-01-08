@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>订单查询</title>
+    <style type="text/css">
+    * {box-sizing: border-box; } 
+    body {display: flex; flex-direction: column; justify-content: center; text-align: left; font-family: 'Lato', sans-serif; min-height: 100vh; padding: 1rem; background-color: #fafafa; } 
+    li {list-style: none; float: left; border: #CCC 1px solid; text-align: center; line-height: 30px; } 
+    div {clear: both; width: 90%; margin: auto; } 
+    </style>
+</head>
+
+<body>
+    <div style="text-align:center; font-size:36px;">客户对账单</div>
+    <div style="text-align:center; line-height:50px;">客户：{$contact.name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：{$contact.number}</div>
+    <if condition="!empty($contact['list'])">
+        <volist name="contact['list']" id="val">
+            <if condition="!empty($val['sub'])"> 
+            <div>
+                <ul>
+                    <li style="width:30%;">单据日期：{$val.billdate}</li>
+                    <li style="width:30%;">单据编号：{$val.billno}</li>
+                    <li style="width:30%;">本次付款：{$val.rpamount}</li>
+                </ul>
+                <ul>
+                    <li style="width:30%;">商品编号</li>
+                    <li style="width:30%;">商品名称</li>
+                    <li style="width:5%;">数量</li>
+                    <li style="width:5%;">单位</li>
+                    <li style="width:10%;">单价</li>
+                    <li style="width:10%;">金额</li>
+                </ul>
+                <volist name="val['sub']" id="v">
+                <?php $num = abs($v['qty']);?>
+                    <ul>
+                        <li style="width:30%;">{$v.number}</li>
+                        <li style="width:30%;">{$v.name}</li>
+                        <li style="width:5%;">{$num}</li>
+                        <li style="width:5%;">{$v.unitname}</li>
+                        <li style="width:10%;">{$v.price}</li>
+                        <li style="width:10%;">{$v['price']*$num}</li>
+                    </ul>
+                </volist>
+                <ul>
+                    <li style="width:50%;">店铺名称：{$val['sub'][0]['sname']}</li>
+                    <li style="width:40%;"><a href="#">点击查看处方>></a></li>
+                </ul>
+                <div style="height:40px;"></div>
+            </div>
+            </if>
+        </volist>
+    <else />
+        <div align="center" style="margin-top:20px;color:red;">没有查询到订单数据！ </div>
+    </if>
+    <div style="display:none;">
+        <ul>
+            <li style="width:30%;">单据日期：2020-03-28</li>
+            <li style="width:30%;">单据编号：XS202009261999999</li>
+            <li style="width:30%;">本次付款：800</li>
+        </ul>
+        <ul>
+            <li style="width:30%;">商品编号</li>
+            <li style="width:30%;">商品名称</li>
+            <li style="width:5%;">数量</li>
+            <li style="width:5%;">单位</li>
+            <li style="width:10%;">单价</li>
+            <li style="width:10%;">金额</li>
+        </ul>
+        <ul>
+            <li style="width:30%;">SA1600004C04</li>
+            <li style="width:30%;">潮流SA1600004C04</li>
+            <li style="width:5%;">2</li>
+            <li style="width:5%;">付</li>
+            <li style="width:10%;">100</li>
+            <li style="width:10%;">200</li>
+        </ul>
+        <ul>
+            <li style="width:30%;">SA1600004C04</li>
+            <li style="width:30%;">潮流SA1600004C04</li>
+            <li style="width:5%;">2</li>
+            <li style="width:5%;">付</li>
+            <li style="width:10%;">100</li>
+            <li style="width:10%;">200</li>
+        </ul>
+        <ul>
+            <li style="width:50%;">店铺名称：天下汇店</li>
+            <li style="width:41%;"><a href="#">点击查看处方>></a></li>
+        </ul>
+        <div style="height:40px;"></div>
+    </div>
+</body>
+
+</html>

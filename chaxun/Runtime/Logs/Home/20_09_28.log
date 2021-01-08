@@ -1,0 +1,195 @@
+[ 2020-09-28T10:52:00+08:00 ] 117.23.115.147 /chaxun/?mobile=13088900296
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `ci_contact` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`number` FROM `ci_contact` WHERE `number` = '13088900296' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `ci_invoice` [ RunTime:0.0007s ]
+SQL: SELECT a.buId,a.billDate,a.billNo,a.rpAmount FROM ci_invoice a WHERE a.buId = '2' ORDER BY a.billDate desc  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `ci_invoice_info` [ RunTime:0.0006s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009280929261'  [ RunTime:0.0023s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009270924418'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009261842371'  [ RunTime:0.0003s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009261813232'  [ RunTime:0.0003s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009202131205'  [ RunTime:0.0003s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009202128305'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009202123311'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009202109404'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009202108341'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009202107263'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009202053388'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009202025429'  [ RunTime:0.0007s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009202018379'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009202003210'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009201940333'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS201511070859106'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'QTCK201510211027058'  [ RunTime:0.0002s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS201510211000450'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000297s ]
+
+[ 2020-09-28T10:52:36+08:00 ] 117.23.115.147 /chaxun/?mobile=130000000000
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `ci_contact` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`number` FROM `ci_contact` WHERE `number` = '130000000000' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+
+[ 2020-09-28T10:52:44+08:00 ] 117.23.115.147 /chaxun/?mobile=13000000000
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `ci_contact` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`number` FROM `ci_contact` WHERE `number` = '13000000000' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ci_invoice` [ RunTime:0.0018s ]
+SQL: SELECT a.buId,a.billDate,a.billNo,a.rpAmount FROM ci_invoice a WHERE a.buId = '5' ORDER BY a.billDate desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ci_invoice_info` [ RunTime:0.0018s ]
+SQL: SELECT a.amount,a.price,a.qty,b.name,b.number,b.unitName,c.name as sname FROM ci_invoice_info a INNER JOIN ci_goods b ON a.invId=b.id INNER JOIN ci_storage c ON b.locationId=c.id  WHERE a.billNo = 'XS202009261823390'  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000271s ]
+
+[ 2020-09-28T10:52:52+08:00 ] 42.236.10.117 /chaxun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+NOTIC: [8] Undefined variable: contact /www/wwwroot/e.gsnklz.com/chaxun/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 17 行.
+NOTIC: [8] Undefined variable: contact /www/wwwroot/e.gsnklz.com/chaxun/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2020-09-28T10:53:01+08:00 ] 117.23.115.147 /chaxun/?mobile=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `ci_contact` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`number` FROM `ci_contact` WHERE `number` = '' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+
+[ 2020-09-28T12:02:18+08:00 ] 117.23.115.147 /chaxun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
+NOTIC: [8] Undefined variable: contact /www/wwwroot/e.gsnklz.com/chaxun/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 17 行.
+NOTIC: [8] Undefined variable: contact /www/wwwroot/e.gsnklz.com/chaxun/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2020-09-28T12:06:32+08:00 ] 117.23.115.147 /chaxun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+NOTIC: [8] Undefined variable: contact /www/wwwroot/e.gsnklz.com/chaxun/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 17 行.
+NOTIC: [8] Undefined variable: contact /www/wwwroot/e.gsnklz.com/chaxun/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2020-09-28T12:06:54+08:00 ] 117.23.115.147 /chaxun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+NOTIC: [8] Undefined variable: contact /www/wwwroot/e.gsnklz.com/chaxun/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 17 行.
+NOTIC: [8] Undefined variable: contact /www/wwwroot/e.gsnklz.com/chaxun/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
